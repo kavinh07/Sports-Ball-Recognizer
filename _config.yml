@@ -1,9 +1,9 @@
-remote_theme: jekyll-theme-basically-basic@master
+remote_theme: daviddarnes/alembic@main
 plugins:
 - jekyll-remote-theme
 
 title: Ball Classifier
-description: A classifier that classifies 10 types of balls using FastAI.
-    
-author: 
+description: An image classification API that classifies 10 different types of balls worn around the world
+
+author:
   name: Md. Kabin Hasan Kanchon
