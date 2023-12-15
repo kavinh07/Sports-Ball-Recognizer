@@ -4,10 +4,9 @@ plugins:
 
 title: Ball Classifier
 description: 
-A classifier that classifies 10 types of balls as given,
-  1. 
+A classifier that classifies 10 types of balls using FastAI.
     
 author: 
   name: Md. Kabin Hasan Kanchon
-  
+
     
