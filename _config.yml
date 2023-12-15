@@ -1,4 +1,4 @@
-remote_theme : jekyll-theme-basically-basic@master
+remote_theme: jekyll-theme-basically-basic@master
 plugins:
 - jekyll-remote-theme
 
@@ -8,5 +8,3 @@ A classifier that classifies 10 types of balls using FastAI.
     
 author: 
   name: Md. Kabin Hasan Kanchon
-
-    
