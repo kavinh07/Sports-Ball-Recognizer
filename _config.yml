@@ -3,8 +3,7 @@ plugins:
 - jekyll-remote-theme
 
 title: Ball Classifier
-description: 
-A classifier that classifies 10 types of balls using FastAI.
+description: A classifier that classifies 10 types of balls using FastAI.
     
 author: 
   name: Md. Kabin Hasan Kanchon
