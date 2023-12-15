@@ -14,7 +14,7 @@ The types are following: <br/>
     10. Baseball<br/>
 
 # Dataset Preparation
-**Data Collection:** Downloaded from DuckDuckGo using term name <br/>
+**Data Collection:** Downloaded from DuckDuckGo using term name and adding extra string ' only balls images'<br/>
 **DataLoader:** Used fastai DataBlock API to set up the DataLoader. <br/>
 **Data Augmentation:** fastai provides default data augmentation which operates in GPU. <br/>
 Details can be found in `data_prep.ipynb`
