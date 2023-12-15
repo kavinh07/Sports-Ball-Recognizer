@@ -25,7 +25,7 @@ Details can be found in `data_prep.ipynb`
 
 # Model Deployment
 I deployed to model to HuggingFace Spaces Gradio App. The implementation can be found in `deployment` folder or [here](https://huggingface.co/spaces/kavinh07/ball-classifier). <br/>
-[HuggingFaceSpaceImage.png](https://github.com/kavinh07/Ball-Classifier/blob/main/deployment/HuggingFaceSpaceImage.png)
+![HuggingFaceSpaceImage.png](https://github.com/kavinh07/Ball-Classifier/blob/main/deployment/HuggingFaceSpaceImage.png)
 
 # API integration with GitHub Pages
 The deployed model API is integrated [here](kavinh07.github.io/Ball-Classifier/) in GitHub Pages Website. Implementation and other details can be found in `docs` folder.
