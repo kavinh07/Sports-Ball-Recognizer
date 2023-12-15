@@ -2,15 +2,15 @@
 title: About
 layout: page
 ---
-This classifier takes ball's images as input and able to classifie 10 different types of balls as given: <br/>
-    1. Football
-    2. Basketball
-    3. Volleyball
-    4. Rugby
-    5. Golf
-    6. Cricket
-    7. Tennis
-    8. Bowling
-    9. Billiards
-    10. Baseball
+This classifier takes ball's images from different sports as input and able to classifie 10 different types of balls as given: <br/>
+    1. Football<br/>
+    2. Basketball<br/>
+    3. Volleyball<br/>
+    4. Rugby<br/>
+    5. Golf<br/>
+    6. Cricket<br/>
+    7. Tennis<br/>
+    8. Bowling<br/>
+    9. Billiards<br/>
+    10. Baseball<br/>
 You have to click on Classifer above in the dashboard to classify any ball image.
