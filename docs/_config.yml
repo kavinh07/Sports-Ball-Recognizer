@@ -1,9 +1,11 @@
-remote_theme: daviddarnes/alembic@main
-plugins:
-- jekyll-remote-theme
+theme: jekyll-theme-merlot
 
-title: Ball Classifier
-description: An image classification API that classifies 10 different types of balls
+# remote_theme: daviddarnes/alembic@main
+# plugins:
+# - jekyll-remote-theme
 
-author:
-  name: Md. Kabin Hasan Kanchon
+# title: Ball Classifier
+# description: An image classification API that classifies 10 different types of balls
+
+# author:
+#   name: Md. Kabin Hasan Kanchon
