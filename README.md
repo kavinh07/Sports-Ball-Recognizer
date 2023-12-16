@@ -17,7 +17,7 @@ The types are the following: <br/>
 **Data Collection:** Downloaded from DuckDuckGo using term name and adding extra string ' only balls images'<br/>
 **DataLoader:** Used FastAI DataBlock API to set up the DataLoader. <br/>
 **Data Augmentation:** FastAI provides default data augmentation which operates in GPU. <br/>
-Details can be found in `data_prep.ipynb` or [Colab file](https://colab.research.google.com/drive/1OPwZfhkUtTQgKBwDeA8-YcY08l-vU_x9?usp=sharing)
+Details can be found in `data_prep.ipynb` or ![https://img.shields.io/badge/any_text-you_like-blue](https://colab.research.google.com/drive/1OPwZfhkUtTQgKBwDeA8-YcY08l-vU_x9?usp=sharing)
 
 # Training and Data Cleaning
 **Training:** Fine-tuned a resnet34 model for 5 epochs (5 times) and achieved ~99% accuracy. <br/>
