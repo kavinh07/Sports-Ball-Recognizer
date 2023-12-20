@@ -1,4 +1,4 @@
-remote_theme: tactile/
+remote_theme: daattali/beautiful-jekyll
 plugins:
 - jekyll-remote-theme 
 
@@ -7,3 +7,10 @@ description: An image classification API that classifies 10 different types of b
 
 author:
   name: Md. Kabin Hasan Kanchon
+
+navbar-links:
+  About Me: "aboutme"
+  Resources:
+    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - Learn markdown: "https://www.markdowntutorial.com/"
+  Author's home: "https://deanattali.com"
