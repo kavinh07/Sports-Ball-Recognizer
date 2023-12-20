@@ -1,6 +1,6 @@
 ---
 title: Ball Classifier
-layout: default
+layout: page
 ---
 This classifier takes ball's images from different sports as input and able to classifie 10 different types of balls as
 given: <br />
