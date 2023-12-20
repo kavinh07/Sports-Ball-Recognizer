@@ -14,4 +14,4 @@ given: <br />
 8. Bowling<br />
 9. Billiards<br />
 10. Baseball<br />
-You have to click on right above [Classifer](https://kavinh07.github.io/Ball-Classifier/ball_classifier.html) in the dashboard to classify any ball image.
+You have to click on right top [**Classifier**](https://kavinh07.github.io/Ball-Classifier/ball_classifier.html) in the dashboard to classify any ball image.
