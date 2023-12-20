@@ -8,4 +8,5 @@ description: An image classification API that classifies 10 different types of b
 author: Md. Kabin Hasan Kanchon
 
 navbar-links:
+  Home: "index.md"
   Classifier: "ball_classifier.html"
