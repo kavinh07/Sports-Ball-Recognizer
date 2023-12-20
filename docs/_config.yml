@@ -1,6 +1,6 @@
-remote_theme: daviddarnes/alembic@main
+remote_theme: pages-themes/tactile@v0.2.0
 plugins:
-- jekyll-remote-theme
+- jekyll-remote-theme 
 
 title: Ball Classifier
 description: An image classification API that classifies 10 different types of balls
