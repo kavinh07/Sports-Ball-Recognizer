@@ -2,24 +2,89 @@
 title: Ball Classifier
 layout: page
 ---
+<!DOCTYPE html>
+<html>
 
-<input id="photo" type="file">
-<div id="results"></div>
-<script type = "module">
-    import { client } from "https://cdn.jsdelivr.net/npm/@gradio/client@0.1.4/dist/index.min.js";
-    
-    async function loaded(reader) {  
-        const app = await client("https://kavinh07-ball-classifier.hf.space/--replicas/osglb/");
-        const response = await app.predict("/predict", [reader.result]);
-        const label = response['data'][0]['label'];
-        results.innerHTML = `<br/> <img src = "${reader.result}" width="500"> <p>${label}</p>`;
-    }
-    function read() {
-        const reader = new FileReader();
-        reader.addEventListener('load', () => loaded(reader))
-        reader.readAsDataURL(photo.files[0]);
-    }
-    photo.addEventListener('input', read);
+<head>
+    <title>Classifier</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
 
-    
-</script>
+        .file-input {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .file-label {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #photo {
+            display: none;
+        }
+
+        .result-box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            max-width: 500px;
+        }
+
+        #image-preview {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="file-input">
+            <label for="photo" class="file-label">Choose a file</label>
+            <input id="photo" type="file">
+        </div>
+        <div class="result-box">
+            <img id="image-preview" src="" alt="Image Preview">
+            <p id="results"></p>
+        </div>
+    </div>
+
+    <script type="module">
+        import { client } from "https://cdn.jsdelivr.net/npm/@gradio/client@0.1.4/dist/index.min.js";
+
+        async function loaded(reader) {
+            const app = await client("https://kavinh07-ball-classifier.hf.space/--replicas/osglb/");
+            const response = await app.predict("/predict", [reader.result]);
+            const label = response['data'][0]['label'];
+            results.innerHTML = `Predicted result: <b>${label}</b>`;
+            imagePreview.src = reader.result;
+        }
+
+        function read() {
+            const reader = new FileReader();
+            reader.addEventListener('load', () => loaded(reader))
+            reader.readAsDataURL(photo.files[0]);
+        }
+
+        const photo = document.getElementById('photo');
+        const results = document.getElementById('results');
+        const imagePreview = document.getElementById('image-preview');
+
+        photo.addEventListener('input', read);
+    </script>
+</body>
+
+</html>
