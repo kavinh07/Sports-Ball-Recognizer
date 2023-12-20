@@ -48,42 +48,39 @@ layout: page
         }
     </style>
 </head>
-
-<body>
-    <div class="container">
-        <div class="file-input">
-            <label for="photo" class="file-label" style="padding: 5px;">Choose a file</label>
-            <input id="photo" type="file">
-        </div>
-        <div class="result-box">
-            <img id="image-preview" src="" alt="Image Preview">
-            <p id="results"></p>
-        </div>
+<div class="container">
+    <div class="file-input">
+        <label for="photo" class="file-label" style="padding: 5px;">Choose a file</label>
+        <input id="photo" type="file">
     </div>
+    <div class="result-box">
+        <img id="image-preview" src="" alt="Image Preview">
+        <p id="results"></p>
+    </div>
+</div>
 
-    <script type="module">
-        import { client } from "https://cdn.jsdelivr.net/npm/@gradio/client@0.1.4/dist/index.min.js";
+<script type="module">
+    import { client } from "https://cdn.jsdelivr.net/npm/@gradio/client@0.1.4/dist/index.min.js";
 
-        async function loaded(reader) {
-            const app = await client("https://kavinh07-ball-classifier.hf.space/--replicas/osglb/");
-            const response = await app.predict("/predict", [reader.result]);
-            const label = response['data'][0]['label'];
-            results.innerHTML = `Predicted result: <b>${label}</b>`;
-            imagePreview.src = reader.result;
-        }
+    async function loaded(reader) {
+        const app = await client("https://kavinh07-ball-classifier.hf.space/--replicas/osglb/");
+        const response = await app.predict("/predict", [reader.result]);
+        const label = response['data'][0]['label'];
+        results.innerHTML = `Predicted result: <b>${label}</b>`;
+        imagePreview.src = reader.result;
+    }
 
-        function read() {
-            const reader = new FileReader();
-            reader.addEventListener('load', () => loaded(reader))
-            reader.readAsDataURL(photo.files[0]);
-        }
+    function read() {
+        const reader = new FileReader();
+        reader.addEventListener('load', () => loaded(reader))
+        reader.readAsDataURL(photo.files[0]);
+    }
 
-        const photo = document.getElementById('photo');
-        const results = document.getElementById('results');
-        const imagePreview = document.getElementById('image-preview');
+    const photo = document.getElementById('photo');
+    const results = document.getElementById('results');
+    const imagePreview = document.getElementById('image-preview');
 
-        photo.addEventListener('input', read);
-    </script>
-</body>
+    photo.addEventListener('input', read);
+</script>
 
 </html>
