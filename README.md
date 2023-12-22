@@ -22,6 +22,7 @@ Details can be found in `data_prep.ipynb` or [![Colab](https://img.shields.io/ba
 # Training and Data Cleaning
 **Training:** Fine-tuned a resnet34 model for 5 epochs (5 times) and achieved ~99% accuracy. <br/>
 **Data Cleaning:** This part took the longest time. Since I collected data from the browser, there were many noises. Also, some images contained. I cleaned and updated data using FastAI ImageClassifierCleaner. I cleaned the data each time after training or fine-tuning, except for the last time which was the final iteration of the model. <br/>
+You can check the data training and cleaning process in `model_imp.ipynb` or [![Colab](https://img.shields.io/badge/-model_imp-blue?logo=googlecolab)](https://colab.research.google.com/drive/1tEsHOHBKM1LfOBJT4uulLZqSfXkE8Hvh?usp=sharing).
 
 # Model Deployment
 I deployed the model to the HuggingFace Spaces Gradio App. The implementation can be found in the `deployment` folder or [here](https://huggingface.co/spaces/kavinh07/ball-classifier). <br/>
