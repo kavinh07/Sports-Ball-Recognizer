@@ -25,7 +25,7 @@ Details can be found in `data_prep.ipynb` or [![Colab](https://img.shields.io/ba
 You can check the data training and cleaning process in `model_imp.ipynb` or [![Colab](https://img.shields.io/badge/-model_imp-blue?logo=googlecolab)](https://colab.research.google.com/drive/1tEsHOHBKM1LfOBJT4uulLZqSfXkE8Hvh?usp=sharing).
 
 # Model Deployment
-I deployed the model to the HuggingFace Spaces Gradio App. The implementation can be found in the `deployment` folder or [here](https://huggingface.co/spaces/kavinh07/ball-classifier). <br/>
+I deployed the model to the HuggingFace Spaces Gradio App. The implementation can be found in the `deployment` folder or [![Hugging Face Interface](https://img.shields.io/badge/-ball_classifier-blue?logo=huggingface)](https://huggingface.co/spaces/kavinh07/ball-classifier). <br/>
 ![HuggingFaceSpaceImage.png](https://github.com/kavinh07/Ball-Classifier/blob/main/deployment/HuggingFaceSpaceImage.png)
 
 # API integration with GitHub Pages
