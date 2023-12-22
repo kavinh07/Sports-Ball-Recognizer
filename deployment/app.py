@@ -2,9 +2,9 @@ import gradio as gr
 from fastai.vision.all import *
 
 ## Use this commented part to execute this file in windows ##
-import pathlib
-temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
+# import pathlib
+# temp = pathlib.PosixPath
+# pathlib.PosixPath = pathlib.WindowsPath
 
 
 model = load_learner('ball-classifier-v5.pkl')
