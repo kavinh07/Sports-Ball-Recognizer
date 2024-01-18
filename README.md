@@ -14,7 +14,7 @@ The types are the following: <br/>
     10. Baseball<br/>
 
 ## Dataset Preparation
-**Data Collection:** Downloaded from DuckDuckGo using term name and adding extra string ' only balls images'<br/>
+**Data Collection:** Downloaded from DuckDuckGo using term name and adding extra string ' only balls images'. A total of **2872** images were collected initially. After unlinking the damaged data, the total number of images was **2776**.<br/>
 **DataLoader:** Used FastAI DataBlock API to set up the DataLoader. <br/>
 **Data Augmentation:** FastAI provides default data augmentation which operates in GPU. <br/>
 Details can be found in `data_prep.ipynb` or [![Colab](https://img.shields.io/badge/Colab-data_prep-blue?logo=googlecolab)](https://colab.research.google.com/drive/1OPwZfhkUtTQgKBwDeA8-YcY08l-vU_x9?usp=sharing)
