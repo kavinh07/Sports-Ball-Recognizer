@@ -1,4 +1,4 @@
-# Sports-Ball-Classifier
+# Sports-Ball-Recognizer
 An image classification model from data collection, cleaning, model training, deployment and API integration. <br/>
 The model can classify 10 different types of balls <br/>
 The types are the following: <br/>
