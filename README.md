@@ -33,8 +33,8 @@ MobileNet V3 Small|0.920|0.882|0.250|74.91%
 You can check the data training and cleaning process in `model_imp.ipynb` or [![Colab](https://img.shields.io/badge/Colab-model_imp-blue?logo=googlecolab)](https://drive.google.com/file/d/1F9vbLydTH0h-tOJwaLiBJ_vmrjL-cfUp/view?usp=sharing).
 
 ## Model Deployment
-I deployed the model to the HuggingFace Spaces Gradio App. The implementation can be found in the `deployment` folder or [![Hugging Face Interface](https://img.shields.io/badge/Hugging_Face-ball_classifier-ffff00)](https://huggingface.co/spaces/kavinh07/ball-classifier). <br/>
+I deployed the model to the HuggingFace Spaces Gradio App. The implementation can be found in the `deployment` folder or [![Hugging Face Interface](https://img.shields.io/badge/Hugging_Face-Sports_Ball_Recognizer-ffff00)](https://huggingface.co/spaces/kavinh07/ball-classifier). <br/>
 ![HuggingFaceSpaceImage.png](https://github.com/kavinh07/Ball-Classifier/blob/main/deployment/HuggingFaceSpaceImage.png)
 
 ## API integration with GitHub Pages
-The deployed model API is integrated [![Git Interface](https://img.shields.io/badge/-GitHub_page-blue)](https://kavinh07.github.io/Ball-Classifier/) in the GitHub Pages Website. Implementation and other details can be found in the `docs` folder.
+The deployed model API is integrated [![Git Interface](https://img.shields.io/badge/GitHub_Page-Sports_Ball_Recognizer-blue)](https://kavinh07.github.io/Ball-Classifier/) in the GitHub Pages Website. Implementation and other details can be found in the `docs` folder.
