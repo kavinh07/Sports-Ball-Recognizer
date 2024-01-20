@@ -37,4 +37,4 @@ I deployed the model to the HuggingFace Spaces Gradio App. The implementation ca
 ![HuggingFaceSpaceImage.png](https://github.com/kavinh07/Ball-Classifier/blob/main/deployment/HuggingFaceSpaceImage.png)
 
 ## API integration with GitHub Pages
-The deployed model API is integrated [![Git Interface](https://img.shields.io/badge/-Sports_Ball_Recognizer-blue?logo=githubpages)](https://kavinh07.github.io/Ball-Classifier/) in the GitHub Pages Website. Implementation and other details can be found in the `docs` folder.
+The deployed model API is integrated [![Git Interface](https://img.shields.io/badge/GitHub_Pages-Sports_Ball_Recognizer-blue?logo=githubpages)](https://kavinh07.github.io/Ball-Classifier/) in the GitHub Pages Website. Implementation and other details can be found in the `docs` folder.
