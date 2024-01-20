@@ -8,11 +8,26 @@ layout: page
 <head>
     <title>Classifier</title>
     <style>
+        .bg {
+            background-image: url("images\\background.jpg");
+            /* background-repeat: no-repeat; */
+            background-size: auto;
+            background-position: center center;
+        }
+
+        .glass {
+            background-color: rgba(239, 243, 242, 0.6);
+            height: auto;
+            width: auto;
+            margin: 10%;
+            padding-bottom: 15%;
+        }
+
         .container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 100vh;
+            height: auto;
         }
 
         .file-input {
@@ -47,21 +62,24 @@ layout: page
         }
     </style>
 </head>
-<body>
-    <div class="container" style="padding-top: 100px;">
-        <div class="file-input">
-            <label for="photo" class="file-label" style="padding: 5px;">Choose a file</label>
-            <input id="photo" type="file">
-        </div>
-        <div class="result-box">
-            <img id="image-preview" src="" alt="Image Preview">
-            <p id="results"></p>
+
+<body class="bg">
+    <div class="glass">
+        <div class="container" style="padding-top: 100px;">
+            <div class="file-input">
+                <label for="photo" class="file-label" style="padding: 5px;font-size: 20px;">Choose a file</label>
+                <input id="photo" type="file">
+            </div>
+            <div class="result-box">
+                <img id="image-preview" src="images/image_preview.png" alt="">
+                <p id="results"></p>
+            </div>
         </div>
     </div>
-    
+
     <script type="module">
         import { client } from "https://cdn.jsdelivr.net/npm/@gradio/client@0.1.4/dist/index.min.js";
-    
+
         async function loaded(reader) {
             const app = await client("https://kavinh07-ball-classifier.hf.space/--replicas/osglb/");
             const response = await app.predict("/predict", [reader.result]);
@@ -69,17 +87,17 @@ layout: page
             results.innerHTML = `Predicted result: <b>${label}</b>`;
             imagePreview.src = reader.result;
         }
-    
+
         function read() {
             const reader = new FileReader();
             reader.addEventListener('load', () => loaded(reader))
             reader.readAsDataURL(photo.files[0]);
         }
-    
+
         const photo = document.getElementById('photo');
         const results = document.getElementById('results');
         const imagePreview = document.getElementById('image-preview');
-    
+
         photo.addEventListener('input', read);
     </script>
 </body>
