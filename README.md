@@ -20,7 +20,15 @@ The types are the following: <br/>
 Details can be found in `data_prep.ipynb` or [![Colab](https://img.shields.io/badge/Colab-data_prep-blue?logo=googlecolab)](https://colab.research.google.com/drive/1OPwZfhkUtTQgKBwDeA8-YcY08l-vU_x9?usp=sharing)
 
 ## Training and Data Cleaning
-**Training:** Fine-tuned a resnet34 model for 5 epochs (5 times) and achieved ~99% accuracy. <br/>
+**Training:** Fine-tuned several pre-trained models for 5 epochs and got resnet34 as the best model. Then resnet34 was finetuned for 4 more times (Total 5 times) and achieved ~99% accuracy. <br/>
+**Results Comparison:**
+Models|Train Loss|Valid Loss|Error Rate|Accuracy
+:---|---:|---:|---:|---:
+Resnet34|0.052|0.043|0.011|98.87%
+GoogleNet|0.694|0.811|0.213|78.65%
+VGG16|0.472|0.557|0.176|82.4%
+MobileNet V3 Small|0.920|0.882|0.250|74.91%
+
 **Data Cleaning:** This part took the longest time. Since I collected data from the browser, there were many noises. Also, some images contained. I cleaned and updated data using FastAI ImageClassifierCleaner. I cleaned the data each time after training or fine-tuning, except for the last time which was the final iteration of the model. <br/>
 You can check the data training and cleaning process in `model_imp.ipynb` or [![Colab](https://img.shields.io/badge/Colab-model_imp-blue?logo=googlecolab)](https://colab.research.google.com/drive/1tEsHOHBKM1LfOBJT4uulLZqSfXkE8Hvh?usp=sharing).
 
