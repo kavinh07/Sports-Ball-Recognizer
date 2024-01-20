@@ -30,11 +30,11 @@ VGG16|0.472|0.557|0.176|82.4%
 MobileNet V3 Small|0.920|0.882|0.250|74.91%
 
 **Data Cleaning:** This part took the longest time. Since I collected data from the browser, there were many noises. Also, some images contained. I cleaned and updated data using FastAI ImageClassifierCleaner. I cleaned the data each time after training or fine-tuning, except for the last time which was the final iteration of the model. <br/>
-You can check the data training and cleaning process in `model_imp.ipynb` or [![Colab](https://img.shields.io/badge/Colab-model_imp-blue?logo=googlecolab)](https://colab.research.google.com/drive/1tEsHOHBKM1LfOBJT4uulLZqSfXkE8Hvh?usp=sharing).
+You can check the data training and cleaning process in `model_imp.ipynb` or [![Colab](https://img.shields.io/badge/Colab-model_imp-blue?logo=googlecolab)](https://drive.google.com/file/d/1F9vbLydTH0h-tOJwaLiBJ_vmrjL-cfUp/view?usp=sharing).
 
 ## Model Deployment
-I deployed the model to the HuggingFace Spaces Gradio App. The implementation can be found in the `deployment` folder or [![Hugging Face Interface](https://img.shields.io/badge/hugging_face-ball_classifier-ffff00)](https://huggingface.co/spaces/kavinh07/ball-classifier). <br/>
+I deployed the model to the HuggingFace Spaces Gradio App. The implementation can be found in the `deployment` folder or [![Hugging Face Interface](https://img.shields.io/badge/Hugging_Face-ball_classifier-ffff00)](https://huggingface.co/spaces/kavinh07/ball-classifier). <br/>
 ![HuggingFaceSpaceImage.png](https://github.com/kavinh07/Ball-Classifier/blob/main/deployment/HuggingFaceSpaceImage.png)
 
 ## API integration with GitHub Pages
-The deployed model API is integrated [here](https://kavinh07.github.io/Ball-Classifier/) in the GitHub Pages Website. Implementation and other details can be found in the `docs` folder.
+The deployed model API is integrated [![Git Interface](https://img.shields.io/badge/-GitHub_page-blue)](https://kavinh07.github.io/Ball-Classifier/) in the GitHub Pages Website. Implementation and other details can be found in the `docs` folder.
