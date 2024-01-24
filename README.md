@@ -29,7 +29,7 @@ GoogleNet|0.694|0.811|0.213|78.65%
 VGG16|0.472|0.557|0.176|82.4%
 MobileNet V3 Small|0.920|0.882|0.250|74.91%
 
-**Data Cleaning:** This part took the longest time. Since I collected data from the browser, there were many noises. Also, some images contained. I cleaned and updated data using FastAI ImageClassifierCleaner. I cleaned the data each time after training or fine-tuning, except for the last time which was the final iteration of the model. <br/>
+**Data Cleaning:** This part took the longest time. Since I collected data from the browser, there were many noises. Also, some images contained irrelevant data. I cleaned and updated data using FastAI ImageClassifierCleaner. I cleaned the data each time after training or fine-tuning, except for the last time which was the final iteration of the model. <br/>
 You can check the data training and cleaning process in `model_imp.ipynb` or [![Colab](https://img.shields.io/badge/Colab-model_imp-blue?logo=googlecolab)](https://drive.google.com/file/d/1F9vbLydTH0h-tOJwaLiBJ_vmrjL-cfUp/view?usp=sharing).
 
 ## Model Deployment
