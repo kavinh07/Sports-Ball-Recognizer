@@ -22,7 +22,7 @@ Details can be found in `data_prep.ipynb` or [![Colab](https://img.shields.io/ba
 ## Training and Data Cleaning
 **Training:** Fine-tuned several pre-trained models for 5 epochs and got resnet34 as the best model. Then resnet34 was finetuned for 4 more times (Total 5 times) and achieved ~99% accuracy. <br/>
 **Results Comparison:**
-Models|Train Loss|Valid Loss|Error Rate|Accuracy
+Models|Train Loss|Valid Loss|Error Rate|Train Accuracy
 :---|---:|---:|---:|---:
 Resnet34|0.052|0.043|0.011|98.87%
 GoogleNet|0.694|0.811|0.213|78.65%
@@ -37,4 +37,4 @@ I deployed the model to the HuggingFace Spaces Gradio App. The implementation ca
 ![HuggingFaceSpaceImage.png](https://github.com/kavinh07/Ball-Classifier/blob/main/deployment/HuggingFaceSpaceImage.png)
 
 ## API integration with GitHub Pages
-The deployed model API is integrated [![Git Interface](https://img.shields.io/badge/GitHub_Pages-Sports_Ball_Recognizer-blue?logo=githubpages)](https://kavinh07.github.io/Ball-Classifier/) in the GitHub Pages Website. Implementation and other details can be found in the `docs` folder.
+The deployed model API is integrated [![Git Interface](https://img.shields.io/badge/GitHub_Pages-Sports_Ball_Recognizer-blue?logo=githubpages)](https://kavinh07.github.io/Sports-Ball-Recognizer/) in the GitHub Pages Website. Implementation and other details can be found in the `docs` folder.
